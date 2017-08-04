@@ -1,0 +1,89 @@
+body {
+    background-image: url(../images/film_frames.jpg);
+}
+
+p {
+	color: white;
+	font-size: 14px;
+}
+
+h4 {
+		color: white;
+	font-size: 20px;
+		padding:20px;
+
+}
+
+.question {
+	font-weight: bold;
+}
+
+.wrapper {
+	width: 800px;
+	margin: 5px auto;
+	background-color: grey;	
+    border-style: solid;
+    border-width: 5px;
+	border-color: black;
+
+}
+
+.screen {
+	padding: 10px;
+	height: 400px;
+
+}
+
+.timeLeft {
+	padding: 15px;
+	font-size: 10px;
+	color: white;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+
+}
+
+h1 {
+	color: white;
+
+}
+
+.title {
+	position: relative;
+  	top: 15px;
+	text-align: center;
+}
+
+.button {
+	background-color: #cccccc;
+	padding: 15px;
+	text-align: center;
+	width: 150px;
+	border-style: solid;
+    border-width: 5px;
+	border-color: black;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 5px auto;
+	padding: 10px;
+}
+
+.startButton {
+	position: relative;
+  	top: 100px;
+}
+
+.questions {
+	height: 600px;	
+	position: relative;
+	top: -300px;
+	margin-left: 10px;
+  	margin:35px;
+
+
+}
+
+.question {
+	margin:20px;
+}

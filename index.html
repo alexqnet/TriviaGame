@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Movie Trivia</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body>
+
+<div id="wrapper" class="wrapper">
+<div id="end-screen" class="screen">
+<div id="start-screen" class="screen">
+<div id="title" class="title"></div>
+<div id="time-left" class="timeLeft"></div>
+<div class="button startButton" id="start-button">Start</div>
+
+</div>
+</div>
+<div class="questions" id="questions">
+
+
+<form id='Quiz'>
+<p class="question">Question</p>
+<p class="option">A <input type='radio' name='radio1' class='radio1' value='val1' /></p>
+<p class="option">B <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+<p class="option">C <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+<p class="option">D <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+
+<p class="question">Question</p>
+<p class="option">A <input type='radio' name='radio1' class='radio1' value='val1' /></p>
+<p class="option">B <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+<p class="option">C <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+<p class="option">D <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+
+<p class="question">Question</p>
+<p class="option">A <input type='radio' name='radio1' class='radio1' value='val1' /></p>
+<p class="option">B <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+<p class="option">C <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+<p class="option">D <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+
+<p class="question">Question</p>
+<p class="option">A <input type='radio' name='radio1' class='radio1' value='val1' /></p>
+<p class="option">B <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+<p class="option">C <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+<p class="option">D <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+
+<p class="question">Question</p>
+<p class="option">A <input type='radio' name='radio1' class='radio1' value='val1' /></p>
+<p class="option">B <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+<p class="option">C <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+<p class="option">D <input type='radio' name='radio1' class='radio1' value='val2' /></p>
+  <button>Check</button>
+</form>
+
+</div>
+</div>
+
+<script type="text/javascript">
+$("#title").html("<h1>Welcome to the movie trivia game!</h1>");
+  $("#questions").hide();
+
+var correct;
+
+  var i = 5  
+
+function counter () {
+  $("#time-left").html("<h4>You have " + i + " seconds left</h4>");
+  i--;
+if (i == -1) {
+  $("#time-left").hide();
+$("#title").html("<h1>Game over</h1><h4>You got X correct</h4><h4>You got Y wrong</h4>");
+$("#questions").hide();
+} 
+  };
+
+$("#start-button").click(function(){
+  $("#title").html("<h1>Movie trivia</h1>");
+  $("#start-button").hide(); 
+
+
+
+  setInterval(counter, 1000);
+  $("#questions").show();
+
+
+
+
+  });
+
+
+</script>
+
+
+</body>
+
+</html>
